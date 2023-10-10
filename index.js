@@ -15,7 +15,7 @@ timezoneEl.textContent = dayjs.tz.guess();
 
 function updateTime() {
   const now = dayjs();
-  timeEl.textContent = now.format("hh:mm:ss");
+  timeEl.textContent = now.format("HH:mm:ss");
 
   const currentDate = now.format("dddd, D MMMM, YYYY");
   if (currentDate !== dateEl.textContent) dateEl.textContent = currentDate;
