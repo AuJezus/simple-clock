@@ -21,9 +21,42 @@
     <div class="box-outer">
       <div class="box-inner">
         <div class="box-text">
-          <h2 class="timezone">Europe / London</h2>
+          <div class="timezone-container">
+            <h2 class="timezone">Europe / London</h2>
+            <box-icon
+              data-micromodal-trigger="modal-1"
+              color="#555"
+              size="36px"
+              name="edit"
+            ></box-icon>
+          </div>
           <h1>06:36:00</h1>
           <h2 class="date">Monday, 1 May, 2023</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-1" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div
+          class="modal__container box-outer"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-1-title"
+        >
+          <div class="modal__content box-inner">
+            <box-icon
+              data-micromodal-close
+              size="24px"
+              class="modal__close"
+              name="x-circle"
+            ></box-icon>
+            <h2>Change Timezone</h2>
+            <div class="modal__select">
+              <select name="" id=""></select>
+              <button data-micromodal-close id="apply-btn">Apply</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
